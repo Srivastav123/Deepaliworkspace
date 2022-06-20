@@ -18,10 +18,9 @@ public int mult(int subresult, int q)
 int multresult = subresult*q;
 return multresult;
  }
-public void div(int multresult,int r)
+public void div(int multresult)
 {
-int result=0;
-result= multresult/r;
+int result;
 }
 
 public static void main(String[]args) 
@@ -30,6 +29,8 @@ Equation ob= new Equation();
 int addresult1= ob.add(10, 2, 2);
 int subresult= ob.sub(addresult1, 2);
 int multresult= ob.mult(subresult, 2);
-ob.div(multresult, 2);
+ob.div(multresult);
+int result= multresult/2;
+System.out.println("Final result is "+result);
 }
 }
